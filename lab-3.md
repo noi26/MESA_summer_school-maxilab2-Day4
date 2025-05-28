@@ -20,7 +20,7 @@ degenerate helium cores at the tip of the red giant branch. The helium ignition
 lifts this degeneracy and establishes a stable helium-burning core, surrounded
 by a hydrogen-burning shell.
 
-In the following Figure you see an Hertzsprung–Russell (HR) diagram of the GALAH DR2 sample. The highlighted rectangle marks the red clump stars region, which aligns with the highest stellar number-density contours after RGB bump just below. The color scale is linear, where darker shades indicates higher stellar densities. The Figure is taken from [Kumar et al. 2020](https://www.nature.com/articles/s41550-020-1139-7)
+In the following Figure you see an Hertzsprung–Russell (HR) diagram of the GALAH DR2 sample. The highlighted rectangle marks the red clump stars region, which aligns with the highest stellar number-density contours after RGB bump just below. The color scale is linear, where darker shades indicates higher stellar densities. The Figure is taken from [Kumar et al. 2020](https://www.nature.com/articles/s41550-020-1139-7).
 ![HR diagram RC](/thursday/RC_HR_daiagram.png)
 
 Several physical processes in red clump stars remain uncertain. A key uncertainty is **core boundary mixing (CBM)** — whether semiconvection or overshooting dominates
@@ -29,16 +29,16 @@ The nuclear reaction rates are temperature dependent and different rates can pro
 
 Asteroseismology enables us to study the internal structure of these stars through their oscillation modes. In particular, mixed modes—which behave like gravity modes in the core and pressure modes in the envelope—are highly sensitive to the structure near the convective core boundary. The asymptotic period spacing $\'(\Delta \Pi\)'$ of dipole mixed modes serves as a probe of the size and composition gradient in the helium-burning core. Hence, the period spacing in RC stars as a result from different physical prescriptions in MESA gives us theoretical predictions to compare with observations and constrain their stellar structure.
 
-**minilab1**: We will learn about different mixing schemes and test their affect on the period spacing $'\(\Delta \Pi\)'$ in the core He burning phase.
+**Maxilab1**: We will learn about different mixing schemes and test their affect on the period spacing $'\(\Delta \Pi\)'$ in the core He burning phase.
 
-**minilab2**: We will test how different nuclear reaction rates influence the period spacing $'\(\Delta \Pi\)'$ in the core He burning phase.
+**Maxilab2**: We will test how different nuclear reaction rates influence the period spacing $'\(\Delta \Pi\)'$ in the core He burning phase.
 
 **Warning!** These MESA labs have been built in low time and spatial resolution (including some missing physics, like using the most basic nuclear network net and no mass loss) so the students will be able to get results within a few minutes.
 
 
-## maxilab1: Diffetent Mixing Schemes
+## Maxilab1: Diffetent Mixing Schemes
 
-## maxilab2: Different Reaction Rates
+## Maxilab2: Different Reaction Rates
 ### Background:
 
 During the core helium-burning (CHeB) phase, the energy production of the star is primarily driven by two nuclear reactions:
@@ -46,7 +46,7 @@ During the core helium-burning (CHeB) phase, the energy production of the star i
 - The **triple-alpha process** ($'\(3\alpha\)'$): three helium nuclei ($'\(^4\mathrm{He}\)'$) fuse to form carbon ($'\(^{12}\mathrm{C}\)'$). It occurs in two steps: $^4\mathrm{He} + {}^4\mathrm{He} \rightarrow {}^8\mathrm{Be}$ and ${}^8\mathrm{Be} + {}^4\mathrm{He} \rightarrow {}^{12}\mathrm{C} + \gamma$.
 - The **$'\(^{12}\mathrm{C}(\alpha, \gamma)^{16}\mathrm{O}\)'$** reaction: a carbon nucleus captures an alpha particle to form oxygen (${}^{12}\mathrm{C} + {}^4\mathrm{He} \rightarrow {}^{16}\mathrm{O} + \gamma$).
 
-As was mentioned in the introduction to the maxilab, nuclear reaction rates and their
+As was mentioned in the introduction to the Maxilab, nuclear reaction rates and their
 dependence on temperature are uncertainty in RC evolution, leading to different
 stellar interior and different period spacing to compare with observations.
 Helium burning in RC stars is driven primarily by two nuclear reactions.
@@ -59,7 +59,7 @@ Changes in these rates affect the core composition, the duration of the core He 
 (CHeB) phase, and indirectly the size and structure of the convective core.
 This, in turn, influences the period spacing $'\(\Delta \Pi\)'$, making reaction rates a key variable to explore.
 
-In this maxilab2, we will learn to change the reaction rates in MESA and we will reproduce together as a class Figure 5 and Figure 6 from [Noll et al. 2024](https://www.aanda.org/articles/aa/abs/2024/03/aa48276-23/aa48276-23.html), where each table will explore different initial stellar mass and reaction rate.
+In this Maxilab2, we will learn to change the reaction rates in MESA and we will reproduce together as a class Figure 5 and Figure 6 from [Noll et al. 2024](https://www.aanda.org/articles/aa/abs/2024/03/aa48276-23/aa48276-23.html), where each table will explore different initial stellar mass and reaction rate.
 
 Figure 5 from [Noll et al. 2024](https://www.aanda.org/articles/aa/abs/2024/03/aa48276-23/aa48276-23.html). Showing the evolution of $'\(\Delta \Pi\)'$ during the CHeB phase for different $\(3\alpha\)$ reaction rates as a function of the CHeB age (top panel) and central helium abundance (lower panel).
 ![Figure 5 from Noll et al. 2024](/thursday/aa48276-23-fig5.jpg)
@@ -68,16 +68,16 @@ Same as Figure 5 for different $'\(\,^{12}\mathrm{C}(\alpha, \gamma)^{16}\mathrm
 ![Figure 6 from Noll et al. 2024](/thursday/aa48276-23-fig6.jpg)
 
 ### Aims
-**MESA aims**: In this maxilab you will learn how find and change the nuclear reaction net, how to read the nuclear reaction net files and where to find it in the $MESA_DIR. You will learn how to change reaction rates for specifi profiles and how to incorporate all of that in your MESA inlist.
+**MESA aims**: In this Maxilab you will learn how find and change the nuclear reaction net, how to read the nuclear reaction net files and where to find it in the $MESA_DIR. You will learn how to change reaction rates for specifi profiles and how to incorporate all of that in your MESA inlist.
 
 **Science aims**: You will learn how changing the reaction rate for a specific evolution phase in stellar evolution chnages the composition and inner structure and hence the period spacing pattern.
 
-**Solution**: In case you get stuck at any point during the exercises, you can find the solution to this maxilab [here](https://github.com/noi26/MESA_summer_school-maxilab2-Day4/blob/main/maxilab2_solution.zip). Clicking this link will download a zipped directory named: maxilab2_solution.zip.
+**Solution**: In case you get stuck at any point during the exercises, you can find the solution to this Maxilab [here](https://github.com/noi26/MESA_summer_school-maxilab2-Day4/blob/main/maxilab2_solution.zip). Clicking this link will download a zipped directory named: maxilab2_solution.zip.
 
 ### Setting up the MESA model
-In this maxilab we will fix the mixing scheme on maximal overshooting to test the reaction rates affect on the period spacing.
+In this Maxilab we will fix the mixing scheme on maximal overshooting to test the reaction rates affect on the period spacing.
 
-If you ran your MESA models in maxilab1 using the maximal overshooting scheme - you can copy this work directory and continue the maxilab with it. If you used another mixing scheme, or if you are not sure about your solution - please download the correct model from [here](https://github.com/noi26/MESA_summer_school-maxilab2-Day4/blob/main/maxilab2.zip) - it will download a work directory named maxilab2.zip.
+If you ran your MESA models in Maxilab1 using the maximal overshooting scheme - you can copy this work directory and continue the Maxilab with it. If you used another mixing scheme, or if you are not sure about your solution - please download the correct model from [here](https://github.com/noi26/MESA_summer_school-maxilab2-Day4/blob/main/maxilab2.zip) - it will download a work directory named maxilab2.zip.
 
 If you want to unzip the folder using the terminal, you can use:
 ```linux
@@ -98,7 +98,7 @@ Go over the inlist_project file. Make sure that maximal overshooting is indeed t
 {{< /details >}}
 
 {{< details title="Hint 1" closed="true" >}}
-There are different mixing scheme inside the solution to maxilab1 that you downloaded. there are comments explaining each, and there is one for the maximal overshooting scheme.
+There are different mixing scheme inside the solution to Maxilab1 that you downloaded. there are comments explaining each, and there is one for the maximal overshooting scheme.
 Make sure that the rest of the mixing schemes are all commented out besides the maximal overshooting one.
 {{< /details >}}
 
@@ -140,7 +140,7 @@ Before we turn to run our models, lets make sure what we have in our pgstar plot
 We can add two plots that can give us information about the reaction rates and the temperature change during the run.
 
 {{< details title="Task 4" closed="false" >}}
-Replace the kippenhahn diagram and the mixing profile plot you added in maxilab1, so we will have a more space to add our two new plots, with the following plots:
+Replace the kippenhahn diagram and the mixing profile plot you added in Maxilab1, so we will have a more space to add our two new plots, with the following plots:
 - The abundance plot of all the elements the nuclear reaction net we are using displayed as mass fraction in log scale as a function of the mass profile of the star.
 - The central temperature ($log_{10}(T_c)$) as a function of the central density ($log_{10}(\rho_c)$) in log-log scale.
 {{< /details >}}
@@ -158,4 +158,4 @@ cd 1M_Z002_maximal_overshooting
 ```
 
 This is how your pgplot suppose to look like:
-![pgplot](/thursday/pgplot.jpg)
+![pgplot](/thursday/pgplot.png)
